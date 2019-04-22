@@ -1,0 +1,3 @@
+/Users/tkhara/CLionProjects/ds_worksheet23/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/tkhara/CLionProjects/ds_worksheet23/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/tkhara/CLionProjects/ds_worksheet23/cmake-build-debug/CMakeFiles/ds_worksheet23.dir

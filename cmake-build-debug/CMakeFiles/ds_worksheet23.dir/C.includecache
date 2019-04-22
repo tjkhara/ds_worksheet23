@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/tkhara/CLionProjects/ds_worksheet23/dynamicArray.c
+assert.h
+-
+stdlib.h
+-
+stdio.h
+-
+dynamicArray.h
+/Users/tkhara/CLionProjects/ds_worksheet23/dynamicArray.h
+
+/Users/tkhara/CLionProjects/ds_worksheet23/dynamicArray.h
+
