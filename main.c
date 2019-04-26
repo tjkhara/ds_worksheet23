@@ -19,18 +19,17 @@ int main()
     addDynArr(dyn, 40);
     addDynArr(dyn, 50);
 
-    int value;
+    int count = 0;
 
     while(dynArrayIteratorHasNext(itr))
     {
-
-        if(currentIterValue(itr) == 30)
+        if(count == 1)
         {
             dynArrayIteratorRemove(itr);
         }
 
-        printf(" %d \n", dynArrayIteratorNext(itr));
-
+        printf("%d\n", dynArrayIteratorNext(itr));
+        count++;
     }
 
 

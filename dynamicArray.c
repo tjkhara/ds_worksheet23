@@ -475,6 +475,7 @@ TYPE dynArrayIteratorNext (dynArrayIterator *itr)
     return itr->da->data[currIndex];
 }
 
+// Returns value in the array at current index of iterator
 TYPE currentIterValue(dynArrayIterator* itr)
 {
     return itr->da->data[itr->currentIndex];
@@ -484,5 +485,6 @@ TYPE currentIterValue(dynArrayIterator* itr)
 // Removes the value at the current index
 void dynArrayIteratorRemove (dynArrayIterator *itr)
 {
+//    itr->currentIndex--;
     removeAtDynArr(itr->da, itr->currentIndex);
 }
