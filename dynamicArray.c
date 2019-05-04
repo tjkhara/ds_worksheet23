@@ -468,11 +468,10 @@ int dynArrayIteratorHasNext (dynArrayIterator *itr)
 
 // Returns the value of the current index
 // Moves the index forward
-TYPE dynArrayIteratorNext (dynArrayIterator *itr)
+TYPE dynArrayIteratorNext (struct dynArrayIterator *itr)
 {
-    int currIndex = itr->currentIndex;
-    itr->currentIndex++;
-    return itr->da->data[currIndex];
+    assert (itr != 0);
+    return itr->da->data[++itr->currentIndex];
 }
 
 // Returns value in the array at current index of iterator
@@ -485,6 +484,8 @@ TYPE currentIterValue(dynArrayIterator* itr)
 // Removes the value at the current index
 void dynArrayIteratorRemove (dynArrayIterator *itr)
 {
-//    itr->currentIndex--;
+
+    itr->currentIndex--;
     removeAtDynArr(itr->da, itr->currentIndex);
+
 }
